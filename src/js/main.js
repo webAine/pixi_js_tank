@@ -3,12 +3,7 @@ import { assetsMap } from './assetsMap.js';
 import { Tank } from './Tank.js';
 import { Tween, TweenManager } from './Tween.js';
 
-const app = new Application();
-await app.init({ width: 800, height: 800, backgroundColor: 0x1099bb });
-
-document.body.appendChild(app.canvas);
-
-await Assets.load(assetsMap.sprites);
+let app; // объявим в глобальной области
 
 const runGame = () => {
   const marker = new Graphics();
@@ -68,4 +63,15 @@ const runGame = () => {
   app.stage.hitArea = new Rectangle(-400, -400, 800, 800);
 };
 
-runGame();
+async function start() {
+  app = new Application();
+  await app.init({ width: 800, height: 800, backgroundColor: 0x1099bb });
+
+  document.body.appendChild(app.canvas);
+
+  await Assets.load(assetsMap.sprites);
+
+  runGame();
+}
+
+start();

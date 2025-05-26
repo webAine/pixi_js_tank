@@ -1,11 +1,14 @@
 {
   "name": "pixi_js_tank",
   "private": true,
+  "homepage": "https://webAine.github.io/pixi_js_tank",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
