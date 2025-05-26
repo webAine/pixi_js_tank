@@ -26,8 +26,8 @@ export class Tank {
     this._bodyContainer = new Container();
     this._view.addChild(this._bodyContainer);
 
-    this._tracksLeft = createAnimatedSprite(['/assets/parts/tracks/TrackСFrame1.png', '/assets/parts/tracks/TrackСFrame2.png'], { x: 0, y: -80 });
-    this._tracksRight = createAnimatedSprite(['/assets/parts/tracks/TrackСFrame1.png', '/assets/parts/tracks/TrackСFrame2.png'], { x: 0, y: 80 });
+    this._tracksLeft = createAnimatedSprite(['/assets/parts/tracks/TrackCFrame1.png', '/assets/parts/tracks/TrackCFrame2.png'], { x: 0, y: -80 });
+    this._tracksRight = createAnimatedSprite(['/assets/parts/tracks/TrackCFrame1.png', '/assets/parts/tracks/TrackCFrame2.png'], { x: 0, y: 80 });
     this._tracksLeft.animationSpeed = 0.25;
     this._tracksRight.animationSpeed = 0.25;
 

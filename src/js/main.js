@@ -1,9 +1,9 @@
 import { Application, Assets, Graphics, Rectangle } from 'pixi.js';
 import { assetsMap } from './assetsMap.js';
 import { Tank } from './Tank.js';
-import { Tween, TweenManager } from './Tween.js';
+import { TweenManager } from './Tween.js';
 
-let app; // объявим в глобальной области
+let app;
 
 const runGame = () => {
   const marker = new Graphics();
