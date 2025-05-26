@@ -26,8 +26,8 @@ export class Tank {
     this._bodyContainer = new Container();
     this._view.addChild(this._bodyContainer);
 
-    this._tracksLeft = createAnimatedSprite(['/assets/parts/tracks/TrackCFrame1.png', '/assets/parts/tracks/TrackCFrame2.png'], { x: 0, y: -80 });
-    this._tracksRight = createAnimatedSprite(['/assets/parts/tracks/TrackCFrame1.png', '/assets/parts/tracks/TrackCFrame2.png'], { x: 0, y: 80 });
+    this._tracksLeft = createAnimatedSprite(['assets/parts/tracks/TrackCFrame1.png', 'assets/parts/tracks/TrackCFrame2.png'], { x: 0, y: -80 });
+    this._tracksRight = createAnimatedSprite(['assets/parts/tracks/TrackCFrame1.png', 'assets/parts/tracks/TrackCFrame2.png'], { x: 0, y: 80 });
     this._tracksLeft.animationSpeed = 0.25;
     this._tracksRight.animationSpeed = 0.25;
 
@@ -39,12 +39,12 @@ export class Tank {
     this._towerContainer = new Container();
     this._view.addChild(this._towerContainer);
 
-    this._towerContainer.addChild(createSprite('/assets/parts/guns/HeavyGunB.png', { x: 140, y: -27 }));
-    this._towerContainer.addChild(createSprite('/assets/parts/guns/HeavyGunB.png', { x: 160, y: 29 }));
+    this._towerContainer.addChild(createSprite('assets/parts/guns/HeavyGunB.png', { x: 140, y: -27 }));
+    this._towerContainer.addChild(createSprite('assets/parts/guns/HeavyGunB.png', { x: 160, y: 29 }));
 
-    this._towerContainer.addChild(createSprite('/assets/parts/gun_connectors/GunConnectorD.png', { x: 80, y: 0 }));
+    this._towerContainer.addChild(createSprite('assets/parts/gun_connectors/GunConnectorD.png', { x: 80, y: 0 }));
 
-    this._towerContainer.addChild(createSprite('/assets/parts/towers/HeavyTowerB.png'));
+    this._towerContainer.addChild(createSprite('assets/parts/towers/HeavyTowerB.png'));
   }
 
   get view() {
